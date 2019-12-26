@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:700&display=swap');
+
+
+.logoTitle {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Oxygen', 'sans-serif';
+    margin-top: 150px;
+}
+
+.logoTitle span {
+    color: red;
+}
+
+
+/*  SEMI LARGE PAGE */
+
+@media (max-width: 1200px) {
+
+}
+
+/* TABLET PAGE */
+
+@media (max-width: 949px) {
+
+
+  }
+
+/* MOBILE PAGE */
+
+@media (max-width: 575px) {
+
+    .homeBlock {
+        align-items: center;
+        text-align: center;
+        margin: 50px auto;
+        height: 100%;
+        width: 80%;
+    }
+
+}
