@@ -1,49 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:700&display=swap');
 
 .aboutBlock {
     display: flex;
-    margin: -20px 70px;
-    color: rgba(0, 140, 255, 0.966);
-    font-family: 'Raleway', sans-serif;
-    background-color: white;
+    justify-content: center;
+    margin: 75px auto;
+    font-family: 'Oxygen', sans-serif;
+    background-color: rgba(255, 255, 255, 0.836);
     border-radius: 5px;
-    padding: 15px;
+    width: 800px;
 }
 
-.portrait {
-    width: 600px;
-    transition: 1s;
-}
-
-.aboutInfo {
+.aboutTitle {
+    width: 50%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutBlock h5 {
+    margin: 0;
+    padding: 50px;
+    font-size: 2.9em;
     text-align: left;
-    padding: 10px;
 }
 
-.aboutInfo h2 {
-    margin-bottom: -5px;
-    font-size: 1.7vw;
-    color: black;
-    letter-spacing: 1.5px;
-    transition: 1s;
-    
-}
-
-.aboutInfo h1 {
-    margin-bottom: -2px;
-    font-size: 2.2vw;
-    transition: 1s;
-    line-height: 40px;
-}
-
-.aboutInfo p {
-    letter-spacing: 1.2px;
-    line-height: 50px;
-    font-size: 1.2vw;
-    color: rgb(37, 37, 37);
-    transition: 1s;
+.aboutBlock p {
+    display: block;
+    margin: 0;
+    padding: 30px;
+    text-align: left;
+    color: rgb(92, 92, 92);
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2em;
+    line-height: 45px;
 }
 
 .bottomBorder {
@@ -57,39 +46,27 @@
 /* SEMI LARGE PAGE */
 
 @media (max-width: 1500px) {
-    .aboutInfo p {
-        line-height: 40px;
-    }
+
 }
 
 @media (max-width: 1500px) {
-    .aboutInfo p {
-        line-height: 40px;
-    }
+
 }
 
 @media (max-width: 1300px) {
     .bottomBorder {
         display: none;
     }
-    .aboutInfo h2 {
-        font-size: 1.3em;
-        letter-spacing: 1.5px;
+
+    .aboutBlock h1 {
+
     }
     
-    .aboutInfo h1 {
-        font-size: 1.5em;
-        line-height: 40px;
+    .aboutBlock p {
+
     }
-    
-    .aboutInfo p {
-        line-height: 40px;
-        font-size: 0.9em;
-    }
-    .portrait {
-        width: 500px;
-    }
-    .altbody {
+
+    .mainbody {
         overflow-y: visible;
     }
 }
@@ -97,28 +74,20 @@
 /* TABLET PAGE */
 
 @media (max-width: 949px) {
-    .aboutInfo h2 {
-        font-size: 1.1em;
-        letter-spacing: 1.5px;
+
+    .aboutBlock h1 {
+
     }
     
-    .aboutInfo h1 {
-        font-size: 1.3em;
-        line-height: 30px;
-    }
-    
-    .aboutInfo p {
-        line-height: 25px;
-        font-size: 0.7em;
+    .aboutBlock p {
+
     }
 
-    .portrait {
-        width: 300px;
-    }
+
     .bottomBorder {
         display: none;
     }
-    .altbody {
+    .mainbody {
         overflow-y: visible;
     }
 }
@@ -128,15 +97,13 @@
 @media (max-width: 840px) {
     .aboutBlock {
         flex-direction: column;
+        text-align: center;
     }
-    .altbody {
+    .mainbody {
         overflow-y: visible;
     }
     .bottomBorder {
         display: none;
-    }
-    .aboutInfo {
-        text-align: center;
     }
 
 }

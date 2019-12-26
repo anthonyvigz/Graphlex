@@ -8,34 +8,30 @@ function About() {
   return (
     <AbsoluteWrapper>
         <div className="aboutBlock">
-                <div className="aboutInfo">
                     <Spring
                         from={{ opacity: 0 }}
                         to={{ opacity: 1 }}
                         delay='500'>
-                        {props => <div style={props}>
-                            <h1>A professional web developer with experience across all creative platforms.</h1>
+                        {props => <div className="aboutTitle" style={props}>
+                            <h5>WE'RE JUST LIKE THE REST, ONLY DIFFERENT</h5>
                         </div>}
                     </Spring>
                     <Spring
                         from={{ opacity: 0 }}
                         to={{ opacity: 1 }}
                         delay='700'>
-                        {props => <div style={props}>
+                        {props => <div className="aboutTitle" style={props}>
                             <p>
-                                I am a full stack web developer who creates compelling websites 
-                                and user-friendly apps. Through the Lambda School intensive training 
-                                course, I mastered engineering intuitive and dynamic user interfaces 
-                                that are both efficient and secure. My extensive experience in graphic 
-                                design and video production, as well as my education in media 
-                                communications, give me the creative cutting edge in providing practical 
-                                and effective solutions within any technical environment. I am eager to 
-                                work with motivated and open-minded people that are ready to tackle big 
-                                challenges and produce innovative results in software and web development. 
+                            In fact we’re just a bunch of 
+                            friendly, hardworking people who 
+                            love creating nice stuff for our 
+                            awesome clients. Don’t hesitate to 
+                            connect with us if you think we 
+                            should help you out with your new 
+                            project.
                             </p>
                         </div>}
                     </Spring>
-                </div>
         </div>
     </AbsoluteWrapper>
   );
