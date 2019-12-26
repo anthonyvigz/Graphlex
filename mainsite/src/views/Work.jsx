@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/work.css';
 import { Spring } from 'react-spring/renderprops';
+import Coverflow from 'react-coverflow';
 var listOfImages = [];
 
 class Work extends Component {
@@ -25,11 +26,21 @@ class Work extends Component {
   render() {
     return (
       <AbsoluteWrapper>
-          {
-            listOfImages.map(
-                (image, index) =>    <img className="imgBlock" width="400px" key={index} src={image} alt="info"></img>
-            )
-            }
+        <Coverflow
+    width={960}
+    height={680}
+    displayQuantityOfSide={3}
+    navigation={false}
+    enableHeading={true}
+    enableScroll={true}
+    clickable={true}
+    active={0}
+  >
+    {listOfImages.map( (image, index) => {
+      return (
+          <img src={image} key={index} />
+      )})}
+  </Coverflow>
       </AbsoluteWrapper>
     );
   }
