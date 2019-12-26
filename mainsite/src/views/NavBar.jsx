@@ -15,7 +15,7 @@ function NavBar() {
             <div className="links">
                 <NavLink className={asp} activeClassName="selected" exact to="/">HOME</NavLink>
                 <NavLink className={asp} activeClassName="selected" to="/about">ABOUT</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/skills">SERVICES</NavLink>
+                <NavLink className={asp} activeClassName="selected" to="/services">SERVICES</NavLink>
                 <NavLink className={asp} activeClassName="selected" to="/work">WORK</NavLink>
                 <NavLink className={asp} activeClassName="selected" to="/contact">CONTACT</NavLink>
             </div>

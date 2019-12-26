@@ -24,6 +24,10 @@
     text-align: left;
 }
 
+.aboutBlock h5 span {
+    color: rgb(180, 2, 2);
+}
+
 .aboutBlock p {
     display: block;
     margin: 0;

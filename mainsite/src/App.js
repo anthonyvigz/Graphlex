@@ -3,7 +3,7 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 import Home from './views/Home';
 import About from './views/About';
-import Skills from './views/Skills';
+import Services from './views/Services';
 import Work from './views/Work';
 import Contact from './views/Contact';
 import AbsoluteWrapper from './views/AbsoluteWrapper';
@@ -34,7 +34,7 @@ function App() {
             <Switch location={location}>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/skills" component={Skills} />
+              <Route exact path="/services" component={Services} />
               <Route exact path="/work" component={Work} />
               <Route exact path="/contact" component={Contact} />
             </Switch>

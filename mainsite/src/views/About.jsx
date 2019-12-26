@@ -13,7 +13,7 @@ function About() {
                         to={{ opacity: 1 }}
                         delay='500'>
                         {props => <div className="aboutTitle" style={props}>
-                            <h5>WE'RE JUST LIKE THE REST, ONLY DIFFERENT</h5>
+                            <h5>WE'RE JUST LIKE THE REST, <span>ONLY DIFFERENT</span></h5>
                         </div>}
                     </Spring>
                     <Spring
