@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import navLogo from '../img/Single-G.png';
 
 function NavBar() {
   let location = useLocation();
@@ -8,23 +9,15 @@ function NavBar() {
   let navbar = "navbar";
   let asp = "as";
 
-
-  if(location.pathname === "/") {
-    navbar = "navbar"
-  } else {
-    navbar = "navbar navbarAlt"
-    asp = "linksAlt"
-  };
-
     return (
             <nav className={navbar}>
-            <h1>ANTHONY VIGLIOTTA</h1>
+            <img src={navLogo} className="navLogo" />
             <div className="links">
-                <NavLink className={asp} activeClassName="selected" exact to="/">Home</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/about">About</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/skills">Skills</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/work">Work</NavLink>
-                <NavLink className={asp} activeClassName="selected" to="/contact">Contact</NavLink>
+                <NavLink className={asp} activeClassName="selected" exact to="/">HOME</NavLink>
+                <NavLink className={asp} activeClassName="selected" to="/about">ABOUT</NavLink>
+                <NavLink className={asp} activeClassName="selected" to="/skills">SERVICES</NavLink>
+                <NavLink className={asp} activeClassName="selected" to="/work">WORK</NavLink>
+                <NavLink className={asp} activeClassName="selected" to="/contact">CONTACT</NavLink>
             </div>
             </nav>
     )

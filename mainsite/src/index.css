@@ -11,7 +11,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    background: linear-gradient(0deg,rgba(0, 195, 255, 0.63),rgba(0, 140, 255, 0.658)), url('./img/laptop.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.356)), url('./img/laptop.jpg');
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; 
@@ -21,52 +21,6 @@ body {
   position: relative;
   height: 100vh;
 }
-
-.altbody {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-    background: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden; 
-  text-align: center;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  height: 100vh;
-  transition: opacity 1s;
-  overflow-y: scroll;
-}
-
-.skillsbody {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-    background: linear-gradient(0deg,rgba(255, 255, 255, 0),rgba(118, 193, 255, 0)), url('./img/laptop.jpg');;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden; 
-  text-align: center;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  height: 100vh;
-  transition: opacity 1s;
-}
-
-.layerAlt {
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 1s;
-}
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -78,16 +32,17 @@ code {
   align-items: center;
   justify-content: space-between;
   padding: 20px 70px;
-  font-family: 'Raleway', sans-serif;
-  color: white;
+  font-family: 'Oxygen', sans-serif;
+  color: rgb(148, 148, 148);
   transition: 1s;
 
 }
 
-.navbarAlt {
-  color: rgba(0, 140, 255, 0.76);
-  transition: 1s;
+.navLogo {
+  width: 100px;
+  margin-top: 25px;
 }
+
 
 .navbar h1 {
   letter-spacing: 3px;
@@ -98,36 +53,27 @@ code {
 .links {
   display: flex;
   width: 60%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   transition: 1s;
+  margin-bottom: 50px;
 }
 
 .links .selected {
-  color: rgba(142, 223, 255, 0.849);
-  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  transition: 0.25s;
 }
 
 .as {
-  color: white;
+  color: rgb(143, 143, 143);
   text-decoration: none;
   font-size: 1.3vw;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 .as:hover {
-  color: rgba(85, 228, 253, 0.774);
+  color: rgb(255, 255, 255);
 }
 
-.linksAlt {
-  color: rgba(0, 140, 255, 0.897);
-  text-decoration: none;
-  font-size: 1.3vw;
-  transition: 1s;
-}
-
-.linksAlt:hover {
-  color: rgba(60, 0, 255, 0.664);
-}
 
 /* SEMI LARGE PAGE */
 
@@ -197,7 +143,7 @@ code {
     align-items: center;
     justify-content: space-between;
     padding: 20px 70px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     color: white;
     transition: 1s;
   

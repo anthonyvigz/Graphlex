@@ -1,6 +1,7 @@
 import React from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
 import '../css/resume.css';
+import mainLogo from '../img/GXLogoTrans1.png';
 
 function Home() {
 
@@ -8,26 +9,7 @@ function Home() {
 
   return (
     <AbsoluteWrapper>
-        <div className="homeBlock">
-            <button className="hello">Hello!</button>
-            <h2>I am Anthony.</h2>
-            <p>
-                I am a Full Stack Web Developer highly skilled in an array of 
-                front-end and back-end languages and frameworks. 
-                I have a passion for crisp design and flawless functionality.
-            </p>
-            <div className="middle">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/anthonyvigz">
-                <i className="fab fa-github"></i>
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/anthonyvigliotta/">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/anthonyvigz">
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
-        </div>
+          <h1 className="logoTitle">GRAPHLEX<span>VISUAL</span>COMMUNICATIONS</h1>
     </AbsoluteWrapper>
   );
 }

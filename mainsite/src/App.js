@@ -14,17 +14,8 @@ import './css/landingpage.css';
 function App() {
 
   let location = useLocation();
-
-
-  if(location.pathname === "/") {
-    document.body.className = "mainbody";
-  } 
-  else if(location.pathname === "/skills" || location.pathname === "/work" || location.pathname === "/resume" || location.pathname === "/contact") {
-    document.body.className = "skillsbody";
-  }
-  else {
-    document.body.className = "altbody";
-  }
+  
+  document.body.className = "mainbody";
 
 
   let transitions = useTransition(location, location => location.pathname, {
