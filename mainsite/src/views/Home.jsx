@@ -5,7 +5,6 @@ import mainLogo from '../img/GXLogoTrans1.png';
 
 function Home() {
 
-    document.body.classList.remove("newpage");
 
   return (
     <AbsoluteWrapper>
