@@ -37,9 +37,9 @@ class Contact extends Component {
        if(name && message && email) {
         emailjs.send(
           'gmail',
-          'template_SPqTzvPP',
+          'null template',
           templateParams,
-          'user_ok070rGofhMku7T0N56rz'
+          'null user'
         )
         .then((res) => {
 
@@ -69,15 +69,38 @@ class Contact extends Component {
         <AbsoluteWrapper>
           <div className="contactBlock">
             <div id="popUp" style={{opacity: '0'}}>Sent!</div>
-            <h5 className="projectsHeader">Contact</h5>
-            <div className="emptyBorder"></div>
-            <h6>Have a question or want to work together?</h6>
             <form onSubmit={this.sendMessage} className="contactForm">
               <input onChange={this.changeHandler} value={this.state.name} name="name" type="text" placeholder="Name"></input>
               <input onChange={this.changeHandler} value={this.state.email} name="email" type="text" placeholder="E-mail"></input>
               <textarea onChange={this.changeHandler} value={this.state.message} name="message" type="text" placeholder="Your message" rows="4" cols="50"></textarea>
-              <button type="submit">Submit</button>
+              <button type="submit">SEND MESSAGE</button>
             </form>
+            <div className="contactInfo">
+              <h2>LET'S GET IN TOUCH</h2>
+              <p>
+                Want to discuss your ideas for a 
+                new project? We'd love to connect 
+                with you. Just fill out the form 
+                aside or contact us via the details 
+                below.
+              </p>
+              <h2>CONTACT DETAILS</h2>
+              <p>
+                100 King Rail Drive<br/> 
+                Lynnfield MA<br/> 
+                01940 United States<br/>
+              </p>
+              <div className="iconContact">
+                <i className="far fa-envelope"></i>
+                <a href="bobv@graphlex.com">bobv@graphlex.com</a>
+              </div>
+              <div className="iconContact">
+                <i className="fas fa-phone"></i>
+                <h3>
+                  978.758.6848
+                </h3>
+              </div>
+            </div>
           </div>
         </AbsoluteWrapper>
     );

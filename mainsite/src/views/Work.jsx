@@ -26,21 +26,6 @@ class Work extends Component {
   render() {
     return (
       <AbsoluteWrapper>
-        <Coverflow
-    width={960}
-    height={680}
-    displayQuantityOfSide={3}
-    navigation={false}
-    enableHeading={true}
-    enableScroll={true}
-    clickable={true}
-    active={0}
-  >
-    {listOfImages.map( (image, index) => {
-      return (
-          <img src={image} key={index} />
-      )})}
-  </Coverflow>
       </AbsoluteWrapper>
     );
   }

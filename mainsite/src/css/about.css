@@ -8,6 +8,7 @@
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 5px;
     width: 800px;
+    transition: 0.5s;
 }
 
 .aboutTitle {
@@ -53,21 +54,32 @@
 
 }
 
-@media (max-width: 1500px) {
 
-}
-
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
     .bottomBorder {
         display: none;
     }
 
-    .aboutBlock h1 {
-
+    .aboutBlock {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        transition: 0.5s;
+        text-align: center;
+        padding: 30px 0;
     }
     
     .aboutBlock p {
+        padding: 10px;
+    }
 
+    .aboutBlock h5 {
+        margin: 0;
+        padding: 20px;
+        font-size: 3.1em;
+        text-align: left;
+        transition: 0.5s;
     }
 
     .mainbody {
@@ -75,26 +87,7 @@
     }
 }
 
-/* TABLET PAGE */
 
-@media (max-width: 949px) {
-
-    .aboutBlock h1 {
-
-    }
-    
-    .aboutBlock p {
-
-    }
-
-
-    .bottomBorder {
-        display: none;
-    }
-    .mainbody {
-        overflow-y: visible;
-    }
-}
 
 /* SEMI TABLET */
 
@@ -117,6 +110,6 @@
 @media (max-width: 575px) {
     .aboutBlock {
         width: 90%;
-        margin: 0 auto;
+        margin: 25px auto;
     }
 }
