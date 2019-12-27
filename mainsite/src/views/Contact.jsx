@@ -91,11 +91,11 @@ class Contact extends Component {
                 01940 United States<br/>
               </p>
               <div className="iconContact">
-                <i class="far fa-envelope"></i>
+                <i className="far fa-envelope"></i>
                 <a href="bobv@graphlex.com">bobv@graphlex.com</a>
               </div>
               <div className="iconContact">
-                <i class="fas fa-phone"></i>
+                <i className="fas fa-phone"></i>
                 <h3>
                   978.758.6848
                 </h3>

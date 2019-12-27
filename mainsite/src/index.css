@@ -55,7 +55,7 @@ code {
 
 .navLogo {
   width: 100px;
-  margin-top: 25px;
+  margin: 25px 0;
 }
 
 
@@ -118,6 +118,11 @@ code {
   .links {
     width: 90%;
   }
+
+  .navLogo {
+    margin-bottom: 25px;
+  }
+  
 }
 
 /* MOBILE PAGE */
@@ -148,7 +153,7 @@ code {
 
   .mainbody {
     background: none;
-    background-color: rgba(0, 140, 255, 0.651);
+    background-color: rgb(0, 0, 0);
     background-size: cover;
     height: 100vh;
   }
