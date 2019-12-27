@@ -86,16 +86,19 @@ class Contact extends Component {
               </p>
               <h2>CONTACT DETAILS</h2>
               <p>
-                100 King Rail Drive, Lynnfield
-                MA, 01940 United States
+                100 King Rail Drive<br/> 
+                Lynnfield MA<br/> 
+                01940 United States<br/>
               </p>
               <div className="iconContact">
-                <p>bobv@graphlex.com</p>
+                <i class="far fa-envelope"></i>
+                <a href="bobv@graphlex.com">bobv@graphlex.com</a>
               </div>
               <div className="iconContact">
-                <p>
+                <i class="fas fa-phone"></i>
+                <h3>
                   978.758.6848
-                </p>
+                </h3>
               </div>
             </div>
           </div>
