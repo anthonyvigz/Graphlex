@@ -14,8 +14,13 @@ import './css/landingpage.css';
 function App() {
 
   let location = useLocation();
+
+  if(location.pathname === '/work') {
+    document.body.className = "altbody";
+  } else {
+    document.body.className = "mainbody";
+  }
   
-  document.body.className = "mainbody";
 
 
   let transitions = useTransition(location, location => location.pathname, {

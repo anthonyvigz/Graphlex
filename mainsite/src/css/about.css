@@ -5,7 +5,7 @@
     justify-content: center;
     margin: 75px auto;
     font-family: 'Oxygen', sans-serif;
-    background-color: rgba(255, 255, 255, 0.836);
+    background-color: rgba(255, 255, 255, 0.658);
     border-radius: 5px;
     width: 800px;
 }
@@ -20,7 +20,7 @@
 .aboutBlock h5 {
     margin: 0;
     padding: 50px;
-    font-size: 2.9em;
+    font-size: 3.1em;
     text-align: left;
 }
 
@@ -31,9 +31,9 @@
 .aboutBlock p {
     display: block;
     margin: 0;
-    padding: 30px;
+    padding: 50px;
     text-align: left;
-    color: rgb(92, 92, 92);
+    color: rgb(75, 75, 75);
     font-family: 'Oxygen', sans-serif;
     font-size: 1.2em;
     line-height: 45px;

@@ -5,7 +5,9 @@
     font-size: 3.5em;
     color: white;
     font-family: 'Oxygen', 'sans-serif';
+    position: relative;
     margin-top: 150px;
+    transition: 1s;
 }
 
 .logoTitle span {
@@ -16,19 +18,26 @@
 /*  SEMI LARGE PAGE */
 
 @media (max-width: 1200px) {
-
+    .logoTitle {
+        font-size: 3.5em;
+    }
 }
 
 /* TABLET PAGE */
 
 @media (max-width: 949px) {
-
-
+    .logoTitle {
+        font-size: 2.3em;
+    }
   }
 
 /* MOBILE PAGE */
 
 @media (max-width: 575px) {
+
+    .logoTitle {
+        font-size: 1.33em;
+    }
 
     .homeBlock {
         align-items: center;
