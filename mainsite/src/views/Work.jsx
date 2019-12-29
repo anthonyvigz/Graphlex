@@ -8,7 +8,8 @@ class Work extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      photos: portfolio
+      photos: portfolio,
+      photo: portfolio[0]
     }
   }
 
