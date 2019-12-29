@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AbsoluteWrapper from './AbsoluteWrapper';
-import '../css/work.css';
+import '../css/work.scss';
 import { Spring } from 'react-spring/renderprops';
 import portfolio from '../photos';
 import PhotoCard from './PhotoCard';
@@ -20,7 +20,7 @@ class Work extends Component {
   nextPhoto = (event) => {
     event.preventDefault();
     this.setState({ 
-      photo: portfolio[this.state.photo.index] 
+      photo: portfolio[this.state.photo.index+1] 
     })
     console.log(this.state.photo.index);
   }
@@ -28,7 +28,7 @@ class Work extends Component {
   prevPhoto = (event) => {
     event.preventDefault();
     this.setState({ 
-      photo: portfolio[this.state.photo.index-2] 
+      photo: portfolio[this.state.photo.index-1] 
     })
     console.log(this.state.photo.index);
   }
@@ -43,10 +43,22 @@ class Work extends Component {
         </button>
         <button 
           onClick={this.prevPhoto} 
-          disabled={this.state.photo.index === 1}>
+          disabled={this.state.photo.index === 0}>
             Prev
         </button>
-        <PhotoCard photo={this.state.photo} />
+
+        <div className={`cards-slider active-slide-${this.state.photo.index}`}>
+          <div className="cards-slider-wrapper" style={{
+            transform: `translateX(-${this.state.photo.index*(100/this.state.photos.length)}%)`
+          }}>
+            {
+              this.state.photos.map(photo => {
+                return <PhotoCard key={photo.index} photo={photo} />
+              })
+            }
+            <PhotoCard photo={this.state.photo} />
+          </div>
+        </div>
       </AbsoluteWrapper>
     );
   }
