@@ -5,7 +5,7 @@ const PhotoCard = ({photo}) => {
 
     return (
         <div id={`card-${index}`} className="card">
-            <img src={src} alt={name} />
+            <img src={src} alt={name} width="400px" />
             <h2>{name}</h2>
         </div>
     )

@@ -14,27 +14,38 @@ class Work extends Component {
     }
   }
 
-  nextPhoto = () => {
-    const newIndex = this.state.photo.index+1;
+
+  // issue where index is adding here.
+
+  nextPhoto = (event) => {
+    event.preventDefault();
     this.setState({ 
-      photo: portfolio[newIndex] 
+      photo: portfolio[this.state.photo.index] 
     })
-    console.log(this.state.photo)
+    console.log(this.state.photo.index);
   }
 
-  prevPhoto = () => {
-    const newIndex = this.state.photo.index-1;
+  prevPhoto = (event) => {
+    event.preventDefault();
     this.setState({ 
-      photo: portfolio[newIndex] 
+      photo: portfolio[this.state.photo.index-2] 
     })
-    console.log(this.state.photo)
+    console.log(this.state.photo.index);
   }
 
   render() {
     return (
       <AbsoluteWrapper>
-        <button onClick={() => this.nextPhoto()}>Next</button>
-        <button onClick={() => this.prevPhoto()}>Prev</button>
+        <button 
+          onClick={this.nextPhoto} 
+          disabled={this.state.photo.index === this.state.photos.length-1}>
+            Next
+        </button>
+        <button 
+          onClick={this.prevPhoto} 
+          disabled={this.state.photo.index === 1}>
+            Prev
+        </button>
         <PhotoCard photo={this.state.photo} />
       </AbsoluteWrapper>
     );
