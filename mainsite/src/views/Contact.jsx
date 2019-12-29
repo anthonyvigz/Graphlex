@@ -92,7 +92,7 @@ class Contact extends Component {
               </p>
               <div className="iconContact">
                 <i className="far fa-envelope"></i>
-                <a href="bobv@graphlex.com">bobv@graphlex.com</a>
+                <a href="mailto:bobv@graphlex.com">bobv@graphlex.com</a>
               </div>
               <div className="iconContact">
                 <i className="fas fa-phone"></i>

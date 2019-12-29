@@ -13,10 +13,10 @@
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 320px;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 3px;
     border-radius: 5px;
 }
 
@@ -32,13 +32,13 @@
 }
 
 .serviceBlock h3 {
-    font-size: 2em;
+    font-size: 1.8em;
     letter-spacing: 3px;
     color: white;
 }
 
 .serviceBlock h4 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     letter-spacing: 3px;
     color: rgb(202, 202, 202);
 }
@@ -52,7 +52,7 @@
 }
 
 .serviceBlock h5 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     letter-spacing: 3px;
     color: rgb(233, 233, 233);
 }
